@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "FiraCode Nerd Font Mono:pixelsize=12:antialias=true:autohint=true";
+static int borderpx = 9;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -186,36 +186,36 @@ static uint forcemousemod = ShiftMask;
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
-		{ "color0",       STRING,  &colorname[0] },
-		{ "color1",       STRING,  &colorname[1] },
-		{ "color2",       STRING,  &colorname[2] },
-		{ "color3",       STRING,  &colorname[3] },
-		{ "color4",       STRING,  &colorname[4] },
-		{ "color5",       STRING,  &colorname[5] },
-		{ "color6",       STRING,  &colorname[6] },
-		{ "color7",       STRING,  &colorname[7] },
-		{ "color8",       STRING,  &colorname[8] },
-		{ "color9",       STRING,  &colorname[9] },
-		{ "color10",      STRING,  &colorname[10] },
-		{ "color11",      STRING,  &colorname[11] },
-		{ "color12",      STRING,  &colorname[12] },
-		{ "color13",      STRING,  &colorname[13] },
-		{ "color14",      STRING,  &colorname[14] },
-		{ "color15",      STRING,  &colorname[15] },
-		{ "background",   STRING,  &colorname[259] },
-		{ "foreground",   STRING,  &colorname[258] },
-		{ "cursorColor",  STRING,  &colorname[258] },
-		{ "termname",     STRING,  &termname },
-		{ "shell",        STRING,  &shell },
-		{ "minlatency",   INTEGER, &minlatency },
-		{ "maxlatency",   INTEGER, &maxlatency },
-		{ "blinktimeout", INTEGER, &blinktimeout },
-		{ "bellvolume",   INTEGER, &bellvolume },
-		{ "tabspaces",    INTEGER, &tabspaces },
-		{ "borderpx",     INTEGER, &borderpx },
-		{ "cwscale",      FLOAT,   &cwscale },
-		{ "chscale",      FLOAT,   &chscale },
+	{ "font",         STRING,  &font },
+	{ "color0",       STRING,  &colorname[0] },
+	{ "color1",       STRING,  &colorname[1] },
+	{ "color2",       STRING,  &colorname[2] },
+	{ "color3",       STRING,  &colorname[3] },
+	{ "color4",       STRING,  &colorname[4] },
+	{ "color5",       STRING,  &colorname[5] },
+	{ "color6",       STRING,  &colorname[6] },
+	{ "color7",       STRING,  &colorname[7] },
+	{ "color8",       STRING,  &colorname[8] },
+	{ "color9",       STRING,  &colorname[9] },
+	{ "color10",      STRING,  &colorname[10] },
+	{ "color11",      STRING,  &colorname[11] },
+	{ "color12",      STRING,  &colorname[12] },
+	{ "color13",      STRING,  &colorname[13] },
+	{ "color14",      STRING,  &colorname[14] },
+	{ "color15",      STRING,  &colorname[15] },
+	{ "background",   STRING,  &colorname[259] },
+	{ "foreground",   STRING,  &colorname[258] },
+	{ "cursorColor",  STRING,  &colorname[258] },
+	{ "termname",     STRING,  &termname },
+	{ "shell",        STRING,  &shell },
+	{ "minlatency",   INTEGER, &minlatency },
+	{ "maxlatency",   INTEGER, &maxlatency },
+	{ "blinktimeout", INTEGER, &blinktimeout },
+	{ "bellvolume",   INTEGER, &bellvolume },
+	{ "tabspaces",    INTEGER, &tabspaces },
+	{ "borderpx",     INTEGER, &borderpx },
+	{ "cwscale",      FLOAT,   &cwscale },
+	{ "chscale",      FLOAT,   &chscale },
 };
 
 /*
